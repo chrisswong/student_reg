@@ -68,6 +68,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-         DB::statement('Delete * from students');       
+        DB::statement('Delete * from students');       
     }
 };
