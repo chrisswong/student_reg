@@ -1,12 +1,28 @@
 <div>
     <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
 
-    @forelse ($students as $student)
-        <li>{{ $student->name }}</li>
-        @foreach($student->courses as $course)
-            <span> {{ $course->name }} </span>
-        @endforeach
-    @empty
-        <p>No students</p>
-    @endforelse
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Student DOB</th>
+            <th>Courses Enroled </th>
+        </tr>
+        @forelse ($students as $student)
+            <tr>
+                <td>{{ $student->name }}</td>
+                <td>{{ $student->email }}</td>
+                <td>{{ $student->dob }}</td>
+                <td>
+                @foreach($student->courses as $course)
+                    <span> {{ $course->name }} </span>
+                @endforeach 
+                </td>
+            </tr> 
+        @empty
+            <p>No course</p>
+        @endforelse
+    </table>
+    
+
 </div>
