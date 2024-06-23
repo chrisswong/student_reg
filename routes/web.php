@@ -10,3 +10,4 @@ Route::get('/', function () {
 
 Route::get('/courses', [CourseController::class, 'showAll']);
 Route::get('/students', [StudentController::class, 'showAll']);
+Route::get('/student/{id}', [StudentController::class, 'show']);
