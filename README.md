@@ -4,9 +4,9 @@ A sample Laravel project to show relationships between students and courses
 
 ## Routes
 
-```/students``` show lists of student and the applied courses
-```/students/{id}``` show a particular student with student id
-```/courses``` show lists of courses and students applied 
+* ```/students``` show lists of student and the applied courses
+* ```/students/{id}``` show a particular student with student id
+* ```/courses``` show lists of courses and students applied 
 
 ## To do 
 
